@@ -15,6 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/checklist', function () {
+  return view('checklist');
+});
+
+Route::post('/insert', 'Controller@insert');
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
