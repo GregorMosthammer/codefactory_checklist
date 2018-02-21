@@ -61,5 +61,19 @@ class Controller extends BaseController
     return redirect()->route('checklist');
 }
 
+function insert_financing (Request $req)
+    {
+        $financing = $req->input('financing');
+        $data = array (
+            'financing' => $financing
+
+    );
+
+    DB::table('checklist')->insert($data);
+
+    return redirect()->route('checklist');
+}
+
+
 
 }

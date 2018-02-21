@@ -23,9 +23,9 @@ Route::get('/checklist', function () {
 
 Route::post('/insert', 'Controller@insert');
 
-
 Route::post('/insert_passport', 'Controller@insert_passport');
 
+Route::post('/insert_financing', 'Controller@insert_financing');
 
 
 
