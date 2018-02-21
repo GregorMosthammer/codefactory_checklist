@@ -17,10 +17,14 @@ Route::get('/', function () {
 
 Route::get('/checklist', function () {
   return view('checklist');
-});
+})->name('checklist');
+
+
 
 Route::post('/insert', 'Controller@insert');
 
+
+Route::post('/insert_passport', 'Controller@insert_passport');
 
 
 

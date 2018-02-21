@@ -41,8 +41,22 @@ class Controller extends BaseController
     );
 
         DB::table('students')->insert($data);
+
+        return redirect()->route('checklist');
     }
 
+    function insert_passport (Request $req)
+    {
+        $passport = $req->input('passport');
+        $data = array (
+            'passport' => $passport
+
+    );
+
+    DB::table('checklist')->insert($data);
+
+    return redirect()->route('checklist');
+}
 
 
 }

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <title>Laravel</title>
 
@@ -15,7 +16,9 @@
 
 
 <form action="/insert" method="post">
+
 {{csrf_field()}}
+
 Firstname
 <input type="text" name="firstname"></br>
 Lastname
@@ -37,14 +40,43 @@ City
 Country
 <input type="text" name="country"></br>
 Essay
-
-
 <textarea name="essay" rows="5" cols="40"></textarea></br>
-
 
 <input type="submit" name"submit" value="Add">
 
 </form>
 
+<br>
+
+
+<form action="/insert_passport" method="post">
+{{csrf_field()}}
+Do you have a passport?
+
+Yes 
+<input type="checkbox" name="passport" id="checkbox" value="1"/>
+
+No
+<input type="checkbox" name="passport" id="checkbox" value="0"/>
+<input type="submit" name"submit" value="Add">
+
+
+</form>
+
     </body>
+
+    <script>
+    // for the checkbox just to be clickable once
+$("input:checkbox").on('click', function() {
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+    </script>
+
 </html>
