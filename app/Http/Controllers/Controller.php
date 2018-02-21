@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
+use Auth;
 use DB;
 
 class Controller extends BaseController
@@ -26,6 +27,7 @@ class Controller extends BaseController
         $city = $req->input('city');
         $country = $req->input('country');
         $essay = $req->input('essay');
+        $id = Auth::id();
         $data = array (
         'firstname' => $firstname,
         'lastname' => $lastname,
@@ -37,7 +39,8 @@ class Controller extends BaseController
         'plz' => $plz,
         'city' => $city,
         'country' => $country,
-        'essay' => $essay
+        'essay' => $essay,
+        'user_id' => $id
     );
 
         DB::table('students')->insert($data);
