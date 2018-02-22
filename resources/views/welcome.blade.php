@@ -95,8 +95,8 @@
                     @if (Auth::check())
                     <li class="col-lg-4"><a href="{{ url('/home') }}">Home</a></li>
                     @else
-                    <li class="col-lg-4"><a href="{{ url('/login') }}">Login</a></li>
-                    <li class="col-lg-4"><a href="{{ url('/register') }}">Register</a></li>
+                    <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/login') }}">Login</a></li>
+                    <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/register') }}">Register</a></li>
                     @endif
                 
             @endif
