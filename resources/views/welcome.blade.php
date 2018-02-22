@@ -111,21 +111,21 @@
 
 
 <div class="row">
-<div class="col-lg-4" style="background-color:#FFF101; border: 1px solid black;">
+<div class="col-lg-4" style="background-color:#831213; border: 1px solid black;">
 
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 <br>
 <img src="/img\chris.png" alt="CTO" width="110px" height="100px">
 </div>
 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-<h3>"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
-<h3> -Christoph Pirringer <br> CTO</h3>
+<h3 style="color: white;">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
+<h3 style="color: #FFF101;"> -Christoph Pirringer <br> CTO</h3>
 </div>
 
 
 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-<h3>"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
-<h3> -Simona Mirauta</h3>
+<h3 style="color: white;">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
+<h3 style="color: #FFF101;"> -Simona Mirauta</h3>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 <br>
@@ -135,18 +135,18 @@
 </div>
 
 <div class="col-lg-8" style="background-color:#231F20;">
-<h2>What are you waiting for?</h2>
-    <ul>
+<h2 style="color: #FFF101;">What are you waiting for?</h2>
+    <ul style="color: white;">
     <li>Average Full-Stack Developer Salary $88,488</li>
     <li>Life Changing Experience</li>
     <li>In-Demand Career</li>
     </ul>
     <br>
-    <a href="https://www.codefactory.wien/">www.codefactory.wien</a>
+    <a style="color: #FFF101;" href="https://www.codefactory.wien/">www.codefactory.wien</a>
     <br>
     <br>
     <br>
-    <h3>Refer a friend and receive 10% off your cost up to $10,000</h3>
+    <h3 style="color: white;">Refer a friend and receive 10% off your cost up to $10,000</h3>
     <div class="col-lg-12">
         <img src="/img\wien1.jpg" alt="wien" width="100%" height="327px">
     </div>
@@ -198,11 +198,11 @@
     </div>
 
     <div class="col-lg-offset-2 col-lg-8">
-    <h2>Contact Us Here:</h2>
+    <h2 style="color: #FFF101;">Contact Us Here:</h2>
     <br>
-    <h4><a href="https://www.facebook.com/CodeFactoryVienna/">https://www.facebook.com/CodeFactoryVienna/</a></h4>
-    <h4>office@codefactory.wien</h4>
-    <h4 style="float:right">+43 699 12255185</h4>
+    <h4><a style="color: #FFF101;" href="https://www.facebook.com/CodeFactoryVienna/">https://www.facebook.com/CodeFactoryVienna/</a></h4>
+    <h4 style="color: white;">office@codefactory.wien</h4>
+    <h4 style="color: white; float:right">+43 699 12255185</h4>
     <br>
     <img src="/img\logo.png" alt="LOGO" width="330px" height="120px">
     </div>
