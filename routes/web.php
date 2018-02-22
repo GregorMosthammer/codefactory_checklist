@@ -27,7 +27,7 @@ Route::post('/insert_passport', 'Controller@insert_passport');
 
 Route::post('/insert_financing', 'Controller@insert_financing');
 
-
+Route::post('/insert_insurance', 'Controller@insert_insurance');
 
 
 Auth::routes();

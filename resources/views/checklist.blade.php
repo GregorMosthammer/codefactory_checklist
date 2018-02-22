@@ -46,32 +46,28 @@ Essay
 
 </form>
 
+<br><br>
 
-<br>
-
-
-Passport
-
+Passport<br>
+Do you have a passport?
 <form action="/insert_passport" method="post">
 {{csrf_field()}}
-Do you have a passport?
-
 Yes 
 <input type="checkbox" name="passport" id="passportYes" value="1"/>
-
 No
 <input type="checkbox" name="passport" id="passportNo" value="0"/>
 <input type="submit" name"submit" value="Add">
 
 <div id="passportDiv" style="display:none">
-<a href="https://www.usps.com/international/passports.htm">What you need for a passport</a>
+What you need for a passport<a href="https://www.usps.com/international/passports.htm">Link</a>
 </div>
 </form>
-<br>
-Financing
+
+<br><br>
+
+Financing<br>
 (You must have financing available or be approved for financing in order to obtain your VISA. 
 We recommend getting approved, getting your VISA, and then taking the loan out.)
-
 <form action="/insert_financing" method="post">
 {{csrf_field()}}
 I already have 18,500$ 
@@ -92,9 +88,24 @@ b.i.6. https://www.marcus.com/us/en
 b.i.7. Credit Card
 </div>
 
-
 </form>
+<br><br>
+Insurance<br>
+Insurance form filled out
+<form action="/insert_insurance" method="post">
+{{csrf_field()}}
 
+Yes 
+<input type="checkbox" name="insurance" id="insuranceYes" value="1"/>
+
+No
+<input type="checkbox" name="insurance" id="insuranceNo" value="0"/>
+<input type="submit" name"submit" value="Add">
+
+<div id="insuranceDiv" style="display:none">
+Info info info
+</div>
+</form>
 
 
 
@@ -146,7 +157,21 @@ $(function () {
         });
     });
 
-
+// for the checkbox insurance
+$(function () {
+        $("#insuranceNo").click(function () {
+            if ($(this).is(":checked")) {
+                $("#insuranceDiv").fadeIn( "slow", function() {});
+            } else {
+                $("#insuranceDiv").fadeOut( "slow", function() {});
+            }
+        });
+    });
+$(function () {
+        $("#insuranceYes").click(function () {
+            $('#insuranceDiv').fadeOut( "slow", function() {});
+        });
+    });
 
     </script>
 

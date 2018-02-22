@@ -74,6 +74,17 @@ function insert_financing (Request $req)
     return redirect()->route('checklist');
 }
 
+function insert_insurance (Request $req)
+    {
+        $insurance = $req->input('insurance');
+        $data = array (
+            'insurance' => $insurance
 
+    );
+
+    DB::table('checklist')->insert($data);
+
+    return redirect()->route('checklist');
+}
 
 }

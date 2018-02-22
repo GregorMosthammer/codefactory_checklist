@@ -15,19 +15,19 @@ class CreateChecklistTable extends Migration
     {
         Schema::create('checklist', function (Blueprint $table) {
             $table->increments('id');
-            $table->boolean('passport');
-            $table->boolean('financing');
-            $table->boolean('insurance_form');
-            $table->boolean('pass');
-            $table->boolean('visaform');
-            $table->boolean('picture');
-            $table->boolean('travelreservation');
-            $table->boolean('hotelreservation');
-            $table->boolean('employment');
-            $table->boolean('travelinsurance');
-            $table->boolean('financial_means');
-            $table->boolean('passcopy');
-            $table->boolean('consularfee');
+            $table->boolean('passport')->nullable();
+            $table->boolean('financing')->nullable();
+            $table->boolean('insurance')->nullable();
+            $table->boolean('pass')->nullable();
+            $table->boolean('visaform')->nullable();
+            $table->boolean('picture')->nullable();;
+            $table->boolean('travelreservation')->nullable();;
+            $table->boolean('hotelreservation')->nullable();;
+            $table->boolean('employment')->nullable();;
+            $table->boolean('travelinsurance')->nullable();;
+            $table->boolean('financial_means')->nullable();;
+            $table->boolean('passcopy')->nullable();;
+            $table->boolean('consularfee')->nullable();;
             $table->integer('student_id')->unsigned();
             $table->foreign('student_id')->references('id')->on('students');
             $table->timestamps();
