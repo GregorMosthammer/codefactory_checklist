@@ -20,60 +20,7 @@
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            .layout{
-                height: 60px;
-            }
+           
         </style>
     </head>
     <body>
@@ -93,7 +40,7 @@
             @if (Route::has('login'))
                 
                     @if (Auth::check())
-                    <li class="col-lg-4"><a href="{{ url('/home') }}">Home</a></li>
+                    <li class="col-lg-4"><a href="{{ url('/checklist') }}">checklist</a></li>
                     @else
                     <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/login') }}">Login</a></li>
                     <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/register') }}">Register</a></li>
@@ -106,12 +53,12 @@
   </div>
 </nav>
 
-<div class="container" style="margin-top: -20px;">
+<div class="container-fluid">
 
 
 
 <div class="row">
-<div class="col-lg-4" style="background-color:#831213; border: 1px solid black;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="background-color:#032C4B; border: 1px solid black;">
 
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 <br>
@@ -119,13 +66,13 @@
 </div>
 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 <h3 style="color: white;">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
-<h3 style="color: #FFF101;"> -Christoph Pirringer <br> CTO</h3>
+<h3 style="font-style: italic; color: white;"> -Christoph Pirringer <br> CTO</h3>
 </div>
 
 
 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 <h3 style="color: white;">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
-<h3 style="color: #FFF101;"> -Simona Mirauta</h3>
+<h3 style="font-style: italic; color: white;"> -Simona Mirauta</h3>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 <br>
@@ -134,19 +81,20 @@
 
 </div>
 
-<div class="col-lg-8" style="background-color:#231F20;">
-<h2 style="color: #FFF101;">What are you waiting for?</h2>
-    <ul style="color: white;">
+<div class="col-lg-8">
+<h2 style="color: #831213;">What are you waiting for?</h2>
+    <ul>
     <li>Average Full-Stack Developer Salary $88,488</li>
     <li>Life Changing Experience</li>
     <li>In-Demand Career</li>
     </ul>
     <br>
-    <a style="color: #FFF101;" href="https://www.codefactory.wien/">www.codefactory.wien</a>
+    <h4><a href="https://www.codefactory.wien/">www.codefactory.wien</a></h4>
     <br>
     <br>
     <br>
-    <h3 style="color: white;">Refer a friend and receive 10% off your cost up to $10,000</h3>
+    <h3 style="color: #831213; ">Refer a friend and receive 10% off your cost up to $10,000</h3>
+    <br>
     <div class="col-lg-12">
         <img src="/img\wien1.jpg" alt="wien" width="100%" height="327px">
     </div>
@@ -155,20 +103,20 @@
 
 </div>
 
-<div class="row" style="background-color:#231F20;">
+<div class="row">
 
 <div class="col-lg-offset-3 col-lg-6">
-<h2 style="color: #FFF101;">Get a new career and the experience of a lifetime</h2>
+<h2 style="color: #831213;">Get a new career and the experience of a lifetime</h2>
 </div>
 </div>
 
-<div class="row" style="background-color:#231F20;">
+<div class="row">
 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 </div>
 
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-    <h3 style="color: #FFF101;">The Package:</h3>
-    <ul style="color: white;">
+    <h3 style="color: #831213;">The Package:</h3>
+    <ul>
         <li>4 Months Full-Time Course in Vienna</li>
         <li>Housing and Flights</li>
         <li>HTML5, CSS3, JavaScript, JQuery, Bootstrap, Project Documentaion, TypeScript, AngularJS 4.0</li>
@@ -178,8 +126,8 @@
 </div>
 
 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-    <h3 style="color: #FFF101;">Additional Perks:</h3>
-    <ul style="color: white;">
+    <h3 style="color: #831213;">Additional Perks:</h3>
+    <ul>
         <li>Graduation in Salzburg, Austria</li>
         <li>Food and Insurance</li>
         <li>Finals Week on the beach</li>
@@ -192,17 +140,17 @@
 
 </div>
 
-<div class="row" style="background-color:#231F20;">
+<div class="row">
     <div class="col-lg-12">
         <img src="/img\wien4.jpg" alt="wien" width="100%" height="313px">
     </div>
 
     <div class="col-lg-offset-2 col-lg-8">
-    <h2 style="color: #FFF101;">Contact Us Here:</h2>
+    <h2 style="color: #831213;">Contact Us Here:</h2>
     <br>
-    <h4><a style="color: #FFF101;" href="https://www.facebook.com/CodeFactoryVienna/">https://www.facebook.com/CodeFactoryVienna/</a></h4>
-    <h4 style="color: white;">office@codefactory.wien</h4>
-    <h4 style="color: white; float:right">+43 699 12255185</h4>
+    <h4><a href="https://www.facebook.com/CodeFactoryVienna/">https://www.facebook.com/CodeFactoryVienna/</a></h4>
+    <h4>office@codefactory.wien</h4>
+    <h4 style="color: #831213; float:right">+43 699 12255185</h4>
     <br>
     <img src="/img\logo.png" alt="LOGO" width="330px" height="120px">
     </div>
