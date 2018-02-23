@@ -51,8 +51,10 @@ class Controller extends BaseController
     function insert_passport (Request $req)
     {
         $passport = $req->input('passport');
+        $id = Auth::id();
         $data = array (
-            'passport' => $passport
+            'passport' => $passport,
+            'user_id' => $id
 
     );
 
@@ -66,19 +68,6 @@ function insert_financing (Request $req)
         $financing = $req->input('financing');
         $data = array (
             'financing' => $financing
-
-    );
-
-    DB::table('checklist')->insert($data);
-
-    return redirect()->route('checklist');
-}
-
-function insert_insurance (Request $req)
-    {
-        $insurance = $req->input('insurance');
-        $data = array (
-            'insurance' => $insurance
 
     );
 
