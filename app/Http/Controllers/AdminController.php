@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Database\Eloquent\Model;
+use App\Students;
 class AdminController extends Controller
 {
     /**
@@ -23,6 +24,7 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $students = App\Students::all();
         return view('admin');
     }
 }
