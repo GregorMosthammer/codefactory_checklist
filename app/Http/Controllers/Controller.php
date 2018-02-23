@@ -48,7 +48,7 @@ class Controller extends BaseController
         return redirect()->route('checklist');
     }
 
-   function insert_passport (Request $request){
+function insert_passport (Request $request){
      $checklist = \App\checklist::updateOrCreate([
     'user_id'   => Auth::user()->id,],
     [
@@ -65,4 +65,15 @@ function insert_financing (Request $request){
     ]);
 return redirect()->route('checklist');
    }
+
+function insert_insurance (Request $request){
+    $checklist = \App\checklist::updateOrCreate([
+   'user_id'   => Auth::user()->id,],
+   [
+   'insurance' => $request->get('insurance'),
+   ]);
+return redirect()->route('checklist');
+  }
+
+
 }
