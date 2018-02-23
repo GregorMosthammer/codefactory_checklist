@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+@section('content')
 <html lang="{{ config('app.locale') }}">
     <head>
         <meta charset="utf-8">
@@ -6,52 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-           
-        </style>
+       
     </head>
     <body>
 
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    
-    
-                <img src="/img\logo.png" alt="LOGO" width="200px" height="70px">
 
-            
-    
-    <ul class="nav navbar-nav" style="float:right;">
-
-
-            @if (Route::has('login'))
-                
-                    @if (Auth::check())
-                    <li class="col-lg-4"><a href="{{ url('/checklist') }}">checklist</a></li>
-                    @else
-                    <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/login') }}">Login</a></li>
-                    <li class="col-lg-4"><a style="color: black; font-weight: bold;" href="{{ url('/register') }}">Register</a></li>
-                    @endif
-                
-            @endif
-
-     
-    </ul>
-  </div>
-</nav>
 
 <div class="container-fluid">
 
@@ -165,4 +128,4 @@
 
         
     </body>
-</html>
+    @endsection
