@@ -45,10 +45,6 @@ Route::prefix('admin')->group(function() {
  Route::get('/admin', function()
       {
   $students = App\Students::all();
-  
-   return view('admin',compact('students')); 
-
-
-	
-      });
+  return view('admin',compact('students')); 
+});
 

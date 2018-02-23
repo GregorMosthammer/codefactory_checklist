@@ -48,32 +48,21 @@ class Controller extends BaseController
         return redirect()->route('checklist');
     }
 
-    function insert_passport (Request $req)
-    {
-        $passport = $req->input('passport');
-        $id = Auth::id();
-        $data = array (
-            'passport' => $passport,
-            'user_id' => $id
-
-    );
-
-    DB::table('checklist')->insert($data);
-
-    return redirect()->route('checklist');
-}
-
-function insert_financing (Request $req)
-    {
-        $financing = $req->input('financing');
-        $data = array (
-            'financing' => $financing
-
-    );
-
-    DB::table('checklist')->insert($data);
-
-    return redirect()->route('checklist');
-}
-
+   function insert_passport (Request $request){
+     $checklist = \App\checklist::updateOrCreate([
+    'user_id'   => Auth::user()->id,],
+    [
+    'passport'  => $request->get('passport'),
+    ]);
+return redirect()->route('checklist');
+   }
+  
+function insert_financing (Request $request){
+     $checklist = \App\checklist::updateOrCreate([
+    'user_id'   => Auth::user()->id,],
+    [
+    'financing' => $request->get('financing'),
+    ]);
+return redirect()->route('checklist');
+   }
 }
