@@ -21,30 +21,8 @@
 
 
 <div class="row">
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="background-color:#032C4B; border: 1px solid black;">
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-<br>
-<img src="/img\chris.png" alt="CTO" width="110px" height="100px">
-</div>
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-<h3 style="color: white;">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
-<h3 style="font-style: italic; color: white;"> -Christoph Pirringer <br> CTO</h3>
-</div>
-
-
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-<h3 style="color: white;">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
-<h3 style="font-style: italic; color: white;"> -Simona Mirauta</h3>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-<br>
-<img src="/img\stu.png" alt="CTO" width="110px" height="110px">
-</div>
-
-</div>
-
-<div class="col-lg-8">
+<div class="col-lg-7 col-lg-offset-1">
 <h2 style="color: #831213;">What are you waiting for?</h2>
     <ul>
     <li>Average Full-Stack Developer Salary $88,488</li>
@@ -53,23 +31,53 @@
     </ul>
     <br>
     <h4><a href="https://www.codefactory.wien/">www.codefactory.wien</a></h4>
-    <br>
-    <br>
-    <br>
-    <h3 style="color: #831213; ">Refer a friend and receive 10% off your cost up to $10,000</h3>
-    <br>
-    <div class="col-lg-12">
-        <img src="/img\wien1.jpg" alt="wien" width="100%" height="327px">
     </div>
     
+
+    <div class="col-lg-3">
+    <h3 style="color: #831213;">Get a new career and the experience of a lifetime </h3>  
 </div>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#032C4B; border: 1px solid black;">
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+<br>
+<img src="/img\chris.png" alt="CTO" width="100%" height="100%">
+</div>
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+<h3 style="color: white;">"Coding is THE most important skill of the 21st century. With it, you can change everything."</h3>
+<h3 style="font-style: italic; color: white;"> -Christoph Pirringer <br> CTO</h3>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="background-color:#032C4B; border: 1px solid black;">
+<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+<h3 style="color: white;">"At CodeFactory, I learned more professional skills in such a short time than I ever thought possible. Even before the End of the course, I had companies looking to hire me!"</h3>
+<h3 style="font-style: italic; color: white;"> -Simona Mirauta</h3>
+</div>
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+<br>
+<img src="/img\stu.png" alt="CTO" width="100%" height="100%">
+</div>
+</div>
+</div>
+
+
 
 </div>
 
 <div class="row">
 
 <div class="col-lg-offset-3 col-lg-6">
-<h2 style="color: #831213;">Get a new career and the experience of a lifetime</h2>
+<h2 style="color: #831213;">Refer a friend and receive 10% off your cost up to $10,000</h2>
 </div>
 </div>
 
