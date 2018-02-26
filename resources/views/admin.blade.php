@@ -10,21 +10,22 @@
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Phone number</th>
-        <th>E-mail</th>
         <th>Checklist status</th>
       </tr>
     </thead>
     <tbody>
-     @foreach($students as $student)
     
+     @foreach($students as $student)
+       
       <tr>
-        <td>{{$student->firstname}}</td>
+        <td><a href="{{url('detail')}}" onclick="admin.update">{{$student->firstname}}</a></td>
         <td>{{$student->lastname}}</td>
         <td>{{$student->phone}}</td>
-        <td>{{$student->phone}}</td>
-        <a><td>details...</td></a>
-      </tr>  
-     @endforeach    
+        <td><a href="#">details...</a></td>
+      </tr>
+   
+      
+     @endforeach
       </tbody>
   </table>
 </div>

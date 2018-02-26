@@ -31,20 +31,34 @@ Route::post('/insert_insurance', 'Controller@insert_insurance');
 
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-
-
 
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/', 'AdminController@index')->name('admin.dashboard'); 
 });
 
- Route::get('/admin', function()
+Route::get('/admin', function()
       {
   $students = App\Students::all();
-  return view('admin',compact('students')); 
-});
+  $users = App\User::all();
+  return view('admin',compact('students', 'users')); 
+})->name('admin.dashboard');
 
+
+
+Route::post('/detail/{id}',array('as' => 'admin.detail', function()
+      {
+  $students = App\Students::all();
+  $users = App\User::all();
+  return view('admin',compact('students', 'users')); 
+}))->name('admin.dashboard');
+
+
+ Route::get('/detail/{id}',array('as' => 'admin.detail',  function()
+      {
+  $students = App\Students::all();
+  $users = App\User::all();
+  return view('detail',compact('students', 'users')); 
+}));
