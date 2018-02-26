@@ -10,7 +10,7 @@
  {{ method_field('PUT') }}
 
 Firstname
-<input value="{{ old('firstname', $students->firstname) }}" type="text" name="firstname"></br>
+<input  type="text" name="firstname"></br>
 Lastname
 <input type="text" name="lastname"></br>
 Phonenumber

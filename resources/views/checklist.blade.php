@@ -93,7 +93,7 @@
 
 
 
-<form action="/insert" method="post">
+<form id="form_id" action="/insert" method="post">
 
 {{csrf_field()}}
 
@@ -120,7 +120,7 @@ Country
 Essay
 <textarea name="essay" rows="5" cols="40"></textarea></br>
 
-<input type="submit" name"submit" value="Add">
+<input id="showlink" type="submit" name"submit" value="Add">
 
 </form>
 
@@ -140,7 +140,7 @@ What you need for a passport
 <br>
 <a href="https://www.usps.com/international/passports.htm">Link</a>
 </div>
-</form>
+
 
 <br><br>
 
@@ -187,7 +187,11 @@ Info info info
 </form>
 
 
-</body>
+<form action="/store" method="get">
+
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
+<input type="submit" name"submit" value="Add"></form>
+
 
     <script>
  // for the checkbox just to be clickable once
@@ -249,6 +253,7 @@ $(function () {
             $('#insuranceDiv').fadeOut( "slow", function() {});
         });
     });
+
 
     </script>
 

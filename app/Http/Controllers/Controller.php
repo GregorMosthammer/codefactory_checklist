@@ -7,6 +7,15 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+use App\checklist;
+=======
+use App\Checklist;
+>>>>>>> Stashed changes
+=======
+use App\Checklist;
+>>>>>>> Stashed changes
 use Auth;
 use DB;
 
@@ -49,7 +58,7 @@ class Controller extends BaseController
     }
 
 function insert_passport (Request $request){
-     $checklist = \App\checklist::updateOrCreate([
+     $checklist = \App\Checklist::updateOrCreate([
     'user_id'   => Auth::user()->id,],
     [
     'passport'  => $request->get('passport'),
@@ -58,7 +67,7 @@ return redirect()->route('checklist');
    }
   
 function insert_financing (Request $request){
-     $checklist = \App\checklist::updateOrCreate([
+     $checklist = \App\Checklist::updateOrCreate([
     'user_id'   => Auth::user()->id,],
     [
     'financing' => $request->get('financing'),
@@ -74,6 +83,11 @@ function insert_insurance (Request $request){
    ]);
 return redirect()->route('checklist');
   }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
-
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 }
